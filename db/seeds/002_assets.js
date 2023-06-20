@@ -7,7 +7,7 @@ exports.seed = function (knex) {
                 {
                     name: 'Asset 1',
                     description: 'Description for Asset 1',
-                    type: 1,
+                    type_id: 8,
                     lat: 43.6339676,
                     lng: -79.394823
                 },
@@ -15,7 +15,7 @@ exports.seed = function (knex) {
                 {
                     name: 'Asset 2',
                     description: 'Description for Asset 2',
-                    type: 2,
+                    type_id: 9,
                     lat: 43.6369865,
                     lng: -79.410435
                 },
