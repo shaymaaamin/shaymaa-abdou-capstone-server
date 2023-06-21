@@ -15,6 +15,7 @@ app.use('/assets', crud('assets'));
 app.use('/employees', crud('employees'));
 app.use('/jobs', crud('jobs'));
 
+app.use('/skills', crud('skills'));
 app.use('/lookups', crud('lookups'));
 
 
