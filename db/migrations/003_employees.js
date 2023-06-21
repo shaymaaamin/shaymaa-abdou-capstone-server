@@ -8,6 +8,7 @@ exports.up = function (knex) {
         table.float('lat');
         table.float('lng');
         table.string('status');
+        table.string('title');
         table.timestamps(true, true);
     });
 };

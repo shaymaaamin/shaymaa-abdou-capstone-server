@@ -13,7 +13,8 @@ exports.seed = function (knex) {
                     phone_number: '1234567890',
                     lat: 43.6451308,
                     lng: -79.3939526,
-                    status: "online"
+                    status: "online",
+                    title: "Technician",
                 },
                 {
                     id: 2,
@@ -23,7 +24,8 @@ exports.seed = function (knex) {
                     phone_number: '9876543210',
                     lat: 43.6463918,
                     lng: -79.4123114,
-                    status: "busy"
+                    status: "busy",
+                    title: "Engineer",
                 },
                 {
                     id: 3,
@@ -33,7 +35,8 @@ exports.seed = function (knex) {
                     phone_number: '5551234567',
                     lat: 43.6437238,
                     lng: -79.4031262,
-                    status: "away"
+                    status: "away",
+                    title: "Technician",
                 },
             ]);
         });

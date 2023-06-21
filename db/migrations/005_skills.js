@@ -1,5 +1,5 @@
 exports.up = function (knex) {
-    return knex.schema.createTable('employee_skills', function (table) {
+    return knex.schema.createTable('skills', function (table) {
         table.increments('id').primary();
         table.integer('skill_id').unsigned().references('id').inTable('lookups');
         table.integer('fault_id').unsigned().references('id').inTable('lookups');
@@ -9,5 +9,5 @@ exports.up = function (knex) {
 };
 
 exports.down = function (knex) {
-    return knex.schema.dropTable('employee_skills');
+    return knex.schema.dropTable('skills');
 };
