@@ -1,13 +1,9 @@
 require('dotenv').config();
 
 module.exports = {
-  client: "mysql2",
-  connection: {
-    host: process.env.MYSQL_DB_HOST,
-    user: process.env.MYSQL_DB_USER,
-    password: process.env.MYSQL_DB_PASSWORD,
-    database: process.env.MYSQL_DB_NAME,
-  },
+  client: "pg",
+  connection: process.env.PG_CONNECTION_STRING + "?sslmode=require",
+  searchPath: ['knex', 'public'],
   migrations: {
     directory: './db/migrations'
   },

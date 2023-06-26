@@ -9,6 +9,7 @@ exports.up = function (knex) {
             table.integer('priority_id').unsigned().references('id').inTable('lookups');
             table.integer('employee_id').unsigned().references('id').inTable('employees');
             table.integer('status_id').unsigned().references('id').inTable('lookups');
+            table.integer('skill_id').unsigned().references('id').inTable('lookups');
 
             table.date('estimated_arrival');
             table.date('estimated_completion');
