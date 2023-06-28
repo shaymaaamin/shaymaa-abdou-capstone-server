@@ -4,7 +4,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const crud = require('./crud');
-const port = process.env.REACT_APP_BACKEND_PORT || 3001;
+const port = process.env.EXPRESS_APP_BACKEND_PORT || 3001;
 
 app.use(cors());
 app.use(express.json());
